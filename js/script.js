@@ -5,9 +5,9 @@
 ========================================================= */
 const SITE_CONFIG = {
   phone: "00971568610778",
-  landline: "0097143324258",
+  landline: "0097143324257",
   whatsapp: "00971568610778",
-  email: "",
+  email: "info@afaaqbusinessdesign.com",
   address:
     "Al Mezan Tower - Muhaisnah 4 Amman St - Dubai - United Arab Emirates",
   hours: "",
@@ -15,11 +15,6 @@ const SITE_CONFIG = {
     "https://www.google.com/maps/search/?api=1&query=Al%20Mezan%20Tower%20Muhaisnah%204%20Amman%20St%20Dubai%20United%20Arab%20Emirates",
   whatsappMessage:
     "Hello AFAAQ, I would like to know more about your customized Belgian chocolate and private-label solutions.",
-  social: {
-    Instagram: "https://instagram.com/afaaq_design",
-    Facebook: "http://facebook.com/",
-    LinkedIn: "http://linkedin.com/",
-  },
 };
 
 const header = document.getElementById("siteHeader");
@@ -140,15 +135,6 @@ if (
     landline.href = telHref(SITE_CONFIG.landline);
     landline.textContent = formatUaeNumber(SITE_CONFIG.landline);
     footerContacts.appendChild(landline);
-  }
-
-  if (SITE_CONFIG.whatsapp) {
-    const whatsapp = document.createElement("a");
-    whatsapp.href = whatsappUrl;
-    whatsapp.target = "_blank";
-    whatsapp.rel = "noopener";
-    whatsapp.textContent = "WhatsApp";
-    footerContacts.appendChild(whatsapp);
   }
 
   if (SITE_CONFIG.email) {
